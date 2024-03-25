@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 
 import classes from './Modal.module.css';
 
@@ -17,10 +16,10 @@ const Backdrop = (props) => {
 
   const Modal = (props) => {
     return (
-        <Fragment>
+        <>
             <Backdrop onClose={props.onClose}/>
             <ModalOverlay>{props.children}</ModalOverlay>
-        </Fragment>
+        </>
     )
   }
   export default Modal;
